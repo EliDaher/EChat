@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/chat.css">
+
+    <script defer src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <script defer src="../js/chat.js"></script>
+    <title>EChat</title>
+</head>
+<body>
+
+    <header class="header">
+        <button class="contactToggle">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#F8F8FA"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+        </button>
+
+        <h1 class="pageTitle">Echat</h1>
+    </header>
+
+    <section class="contact">
+        <div class="userInfo">ELiDaher</div>
+        <div class="contactList">
+
+        </div>        
+
+        <!-- <button class="newChat">Start new chat</button>-->  
+    </section>
+
+    <section class="chats">      
+        <div class="messageContainer">
+
+            
+        </div>
+    </section>
+
+    <section class="sendingSection">
+        
+        <input class="MessageBox" type="text" placeholder="Write Your Message">
+        <button class="sendMessage">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="undefined"><path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Zm0 0v-400 400Z"/></svg>
+        </button>
+
+    </section>
+
+</body>
+</html>

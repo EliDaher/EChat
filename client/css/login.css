@@ -1,0 +1,187 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+form{
+    border: 1px solid #3d2100;
+    border-radius: 20px;
+    height: 190px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px 0px #3d2100;
+    background-color: #ffffff90;
+}
+
+.usernameLabel{
+    position: relative;
+    top: 60px;
+    left: 20px;
+    font-size: 20px;
+    color: #3d2100;
+    font-weight: 600;
+}
+
+.usernameInput{
+    position: relative;
+    top: 60px;
+    left: 20px;
+    height: 26px;
+    font-size: 18px;
+    width: 147px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #3d2100;
+    background: #3d210030;
+    color: #3d2100;
+    padding-left: 8px;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+.loginBtn{
+    position: relative;
+    top: 72px;
+    width: 310px;
+    left: 20px;
+    height: 32px;
+    background-color: #ff8a0050;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3d2100;
+}
+
+.loginBtn:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.loginBtn:hover {
+    background-color: #ff8a00;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+
+
+
+.title{
+    color: #3d2100;
+    font-size: 70px;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    font-family: "Permanent Marker", serif;
+    text-shadow: 0px 0px 2px #3d2100;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.title::first-letter{
+    color: #ff8a00;
+}
+
+
+/*background section*/
+
+.ball{
+    position: absolute;
+    width: 60vw;
+    height: 50vh;
+    background: linear-gradient(135deg, #ff8a00, #ffb347);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: waving 5s alternate infinite;
+
+}
+
+
+
+.ball::before{
+    content: '';
+    position: absolute;
+    width: 62vw;
+    height: 52vh;
+    opacity: .5;
+    background-color: #ff8a00;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-right-radius: 50% 100%;
+    border-top-left-radius: 48% 60%;
+    border-bottom-right-radius: 30% 50%;
+    border-bottom-left-radius: 70% 30%;
+    animation: waving 5s alternate infinite;
+    animation-delay: 3s;
+
+}
+
+@keyframes waving {
+    0%{
+        width: 62vw;
+        height: 55vh;
+        border-top-right-radius: 60% 40%;
+        border-top-left-radius: 88% 70%;
+        border-bottom-right-radius: 30% 20%;
+        border-bottom-left-radius: 45% 50%;
+    }
+
+    50%{
+        width: 50vw;
+        height: 45vh;
+        border-top-right-radius: 20% 50%;
+        border-top-left-radius: 39% 30%;
+        border-bottom-right-radius: 80% 100%;
+        border-bottom-left-radius: 15% 5%;
+    }
+
+    100%{
+        width: 60vw;
+        height: 50vh;
+        border-top-right-radius: 100% 50%;
+        border-top-left-radius: 60% 48%;
+        border-bottom-right-radius: 50% 30%;
+        border-bottom-left-radius: 30% 70%;
+    }
+}
+
+.wrongUsername {
+    background-color: #ff000030;
+    border-bottom: 3px solid #ff0000;
+    animation: shake 0.3s ease;
+}
+
+/* حركة الاهتزاز */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
