@@ -32,5 +32,5 @@ socket.on('usernameNotAlowed', () => {
 
 socket.on('userLogin', () => {
     localStorage.setItem("user", myUsername)
-    window.location.href ='http://127.0.0.1:3000/client/html/chat.html?'
+    window.location.href ='https://elidaher.github.io/EChat/client/html/chat.html?'
 })
