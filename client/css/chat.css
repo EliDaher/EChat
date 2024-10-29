@@ -313,7 +313,7 @@ body{
 
     body{
         display: flex;
-        flex-direction: column;
+        height: 80vh;
     }
     .MessageBox{
         width: calc(100% - 60px);
